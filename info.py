@@ -11,22 +11,22 @@ id_pattern = re.compile(r'^.\d+$')
 
 # Bot information
 SESSION = environ.get('SESSION', 'TechVJBot')
-API_ID = int(environ.get('API_ID', '22554523'))
-API_HASH = environ.get('API_HASH', 'd3cd72e44e4160ce1ee0b7947e8f2d89')
+API_ID = int(environ.get('API_ID', '34686174'))
+API_HASH = environ.get('API_HASH', 'a3b87284000993c5959da76ce0d48caf')
 BOT_TOKEN = environ.get('BOT_TOKEN', "")
-
+y
 
 # This Pictures Is For Start Message Picture, You Can Add Multiple By Giving One Space Between Each.
 PICS = (environ.get('PICS', 'https://graph.org/file/c14c05dc35ad2bf7722e8-340708660e717bf811.jpg')).split()
 
 
 # Admins & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '7460363208 8134543713').split()] # For Multiple Id Use One Space Between Each.
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '8784394162 1398386014').split()] # For Multiple Id Use One Space Between Each.
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]  # For Multiple Id Use One Space Between Each.
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 
 # This Channel Is For When User Start Your Bot Then Bot Send That User Name And Id In This Log Channel, Same For Group Also.
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002672817417'))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1003833259884 '))
 
 # This Is File Channel Where You Upload Your File Then Bot Automatically Save It In Database 
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002468642357').split()]  # For Multiple Id Use One Space Between Each.
@@ -41,7 +41,7 @@ auth_channel = environ.get('AUTH_CHANNEL', '') # give your force subscribe chann
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 
 # This Channel Is For When User Request Any File Name With command or hashtag like - /request or #request
-reqst_channel = environ.get('REQST_CHANNEL', '-1002759664047')
+reqst_channel = environ.get('REQST_CHANNEL', '-1003822978308')
 REQST_CHANNEL = int(reqst_channel) if reqst_channel and id_pattern.search(reqst_channel) else None
 
 # This Channel Is For Index Request 
@@ -88,10 +88,10 @@ PUBLIC_FILE_CHANNEL = environ.get('PUBLIC_FILE_CHANNEL', 'ksbevsbksvs') # Public
 
 
 # Links
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/Movies_search_grp')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/+eZz6TllNKIpkMmRl')
+  GRP_LNK = environ.get('GRP_LNK', 'https://t.me/Movies_search_grpp')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/Sk_entertains')
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', '+1uhvF3pC_pU2Y2Jl') # Support Chat Link Without https:// or @
-OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/lakkisbots')
+OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/lakki_reddy3')
 
 # True Or False
 AI_SPELL_CHECK = bool(environ.get('AI_SPELL_CHECK', True))
